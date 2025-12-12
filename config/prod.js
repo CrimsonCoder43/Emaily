@@ -5,4 +5,8 @@ module.exports = {
   },
   mongoURI: process.env.MONGO_URI,
   cookieKey: process.env.COOKIE_KEY,
+  stripe: {
+    publishableKey: process.env.STRIPE_PUBLISHABLE_KEY,
+    secretKey: process.env.STRIPE_SECRET_KEY,
+  },
 };
