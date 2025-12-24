@@ -51,13 +51,37 @@ const SurveyForm = ({ onSubmit, initialValues }) => {
             render={({ handleSubmit, submitting }) => (
               <form onSubmit={handleSubmit} className='space-y-4'>
                 {formFields.map(({ label, name }) => (
-                  <Field
-                    key={name}
-                    component={SurveyField}
-                    type='text'
-                    label={label}
-                    name={name}
-                  />
+                  <div key={name}>
+                    <Field
+                      component={SurveyField}
+                      type='text'
+                      label={label}
+                      name={name}
+                    />
+                    {name === 'recipients' && (
+                      <div className='alert alert-info mb-4'>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          fill='none'
+                          viewBox='0 0 24 24'
+                          className='stroke-current shrink-0 w-5 h-5'
+                        >
+                          <path
+                            strokeLinecap='round'
+                            strokeLinejoin='round'
+                            strokeWidth='2'
+                            d='M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z'
+                          ></path>
+                        </svg>
+                        <span className='text-sm'>
+                          Use{' '}
+                          <code className='bg-base-200 px-1.5 py-0.5 rounded font-mono text-xs'>
+                            development@skybit.rs
+                          </code>
+                        </span>
+                      </div>
+                    )}
+                  </div>
                 ))}
                 <div className='divider my-8'></div>
                 <div className='flex flex-col sm:flex-row gap-3 justify-end mt-8'>
