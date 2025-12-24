@@ -43,14 +43,16 @@ A full-stack web application for creating and sending email surveys with respons
    
 ### Running the Application
 
-**Development (runs both server and client):**
-npm run dev
+**Development (runs both server and client):**  
+
+npm run dev  
+
 **Or run separately:**
 
-Terminal 1 - Server:
-npm run server
-Terminal 2 - Client:
-npm run client
+Terminal 1 - Server:  
+npm run server  
+Terminal 2 - Client:  
+npm run client  
 - Frontend: `http://localhost:5173`
 - Backend: `http://localhost:3000`
 
