@@ -21,7 +21,8 @@ A full-stack web application for creating and sending email surveys with respons
    cd client
    npm install
    cd ..
-   2. **Set up environment variables**
+
+2. **Set up environment variables**
 
    Create `.env` in `server/` directory:
    
@@ -35,7 +36,9 @@ A full-stack web application for creating and sending email surveys with respons
    MAILGUN_DOMAIN=your_mailgun_domain
    REDIRECT_DOMAIN=http://localhost:5173
    NODE_ENV=development
-      Create `.env` in `server/client/` directory:
+   
+   Create `.env` in `server/client/` directory:
+   
    VITE_STRIPE_KEY=your_stripe_publishable_key
    
 ### Running the Application
