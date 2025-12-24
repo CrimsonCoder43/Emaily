@@ -24,7 +24,7 @@ A full-stack web application for creating and sending email surveys with respons
 
 2. **Set up environment variables:**
 
-   Create `.env` in `server/` directory:
+   Create `.env` in `root/` directory:
    
    - MONGO_URI=your_mongodb_connection_string
    - GOOGLE_CLIENT_ID=your_google_client_id
@@ -37,7 +37,7 @@ A full-stack web application for creating and sending email surveys with respons
    - REDIRECT_DOMAIN=http://localhost:5173
    - NODE_ENV=development
    
-   Create `.env` in `server/client/` directory:
+   Create `.env` in `root/client/` directory:
    
    - VITE_STRIPE_KEY=your_stripe_publishable_key
    
@@ -51,8 +51,10 @@ npm run dev
 
 Terminal 1 - Server:  
 npm run server  
+
 Terminal 2 - Client:  
 npm run client  
+
 - Frontend: `http://localhost:5173`
 - Backend: `http://localhost:3000`
 
