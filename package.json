@@ -3,17 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
-  "author": "",
-  "type": "commonjs",
+  "author": "Bogdan Matorkic",
   "main": "index.js",
   "engines": {
-    "node": "24.11.1",
-    "npm": "11.1.0"
+    "node": "v24.11.1",
+    "npm": "11.7.0"
   },
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
+    "client": "npm run dev --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
@@ -22,10 +21,13 @@
     "concurrently": "^9.2.1",
     "cookie-session": "^2.1.1",
     "express": "^5.2.0",
+    "lodash": "^4.17.21",
+    "mailgun-js": "^0.22.0",
     "mongoose": "^9.0.0",
     "nodemon": "^3.1.11",
     "passport": "^0.5.3",
     "passport-google-oauth20": "^2.0.0",
+    "path-parser": "^6.1.0",
     "stripe": "^20.0.0"
   }
 }
