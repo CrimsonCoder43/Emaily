@@ -26,20 +26,20 @@ A full-stack web application for creating and sending email surveys with respons
 
    Create `.env` in `server/` directory:
    
-   MONGO_URI=your_mongodb_connection_string
-   GOOGLE_CLIENT_ID=your_google_client_id
-   GOOGLE_CLIENT_SECRET=your_google_client_secret
-   COOKIE_KEY=your_random_cookie_key
-   STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
-   STRIPE_SECRET_KEY=your_stripe_secret_key
-   MAILGUN_API_KEY=your_mailgun_api_key
-   MAILGUN_DOMAIN=your_mailgun_domain
-   REDIRECT_DOMAIN=http://localhost:5173
-   NODE_ENV=development
+   - MONGO_URI=your_mongodb_connection_string
+   - GOOGLE_CLIENT_ID=your_google_client_id
+   - GOOGLE_CLIENT_SECRET=your_google_client_secret
+   - COOKIE_KEY=your_random_cookie_key
+   - STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+   - STRIPE_SECRET_KEY=your_stripe_secret_key
+   - MAILGUN_API_KEY=your_mailgun_api_key
+   - MAILGUN_DOMAIN=your_mailgun_domain
+   - REDIRECT_DOMAIN=http://localhost:5173
+   - NODE_ENV=development
    
    Create `.env` in `server/client/` directory:
    
-   VITE_STRIPE_KEY=your_stripe_publishable_key
+   - VITE_STRIPE_KEY=your_stripe_publishable_key
    
 ### Running the Application
 
@@ -48,8 +48,10 @@ npm run dev
 **Or run separately:**
 
 Terminal 1 - Server:
-npm run serverTerminal 2 - Client:
-npm run client- Frontend: `http://localhost:5173`
+npm run server
+Terminal 2 - Client:
+npm run client
+- Frontend: `http://localhost:5173`
 - Backend: `http://localhost:3000`
 
 ## 📋 Features
