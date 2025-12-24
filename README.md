@@ -70,7 +70,3 @@ npm run client- Frontend: `http://localhost:5173`
 3. Create a survey with title, subject, body, and recipient emails
 4. Send survey and track responses
 5. View statistics in dashboard
-
-## 👤 Author
-
-Bogdan Matorkic
