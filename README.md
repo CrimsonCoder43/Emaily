@@ -22,7 +22,7 @@ A full-stack web application for creating and sending email surveys with respons
    npm install
    cd ..
 
-2. **Set up environment variables**
+2. **Set up environment variables:**
 
    Create `.env` in `server/` directory:
    
